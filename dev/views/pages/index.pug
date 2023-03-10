@@ -2,11 +2,12 @@ extends ../templates/template
 block main
     .container
         .logo-container
-            img(src="./assets/images/DS.png", alt="logo")
-        form.form
-            .form__field
-                input(type="text", name="text")#login-user.form__input
-            .form__field
-                input#login-password(type="password", name="password").form__input
-            .form__field
-                input(type="submit", value="send").form__submit
+            img(src="./assets/images/DS.png", alt="logo" class="img-logo")
+        .container__form
+            form.form
+                .form__field
+                    input(type="text", name="text")#login-user.form__input
+                .form__field
+                    input#login-password(type="password", name="password").form__input
+                .form__field
+                    input(type="submit", value="Acceder").form__submit

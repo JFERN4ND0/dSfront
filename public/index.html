@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Acceso al sistema</title>
   </head>
   <body>
     <header></header>
     <main class="main">
       <div class="container">
-        <div class="logo-container"><img src="./assets/images/DS.png" alt="logo"></div>
-        <form class="form">
-          <div class="form__field">
-            <input class="form__input" type="text" name="text" id="login-user">
-          </div>
-          <div class="form__field">
-            <input class="form__input" id="login-password" type="password" name="password">
-          </div>
-          <div class="form__field">
-            <input class="form__submit" type="submit" value="send">
-          </div>
-        </form>
+        <div class="logo-container"><img class="img-logo" src="./assets/images/DS.png" alt="logo"></div>
+        <div class="container__form">
+          <form class="form">
+            <div class="form__field">
+              <input class="form__input" type="text" name="text" id="login-user">
+            </div>
+            <div class="form__field">
+              <input class="form__input" id="login-password" type="password" name="password">
+            </div>
+            <div class="form__field">
+              <input class="form__submit" type="submit" value="Acceder">
+            </div>
+          </form>
+        </div>
       </div>
     </main>
+    <script src="js/scripts-min.js"></script>
   </body>
 </html>
