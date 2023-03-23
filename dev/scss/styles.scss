@@ -1,8 +1,15 @@
+// Configuración de guías de estilo
 @import "config/colors";
 
+// Mixins
+@import "mixins/brakpoins";
+
+// Estilos de base
 @import "base/normalize";
 @import "base/base";
 
+// Bloques
 @import "blocks/forms";
 
+// Pages
 @import "pages/index";

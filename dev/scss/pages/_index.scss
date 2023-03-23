@@ -1,11 +1,42 @@
-.img-logo {
-  max-width: 310px;
-  margin-right: auto;
-  margin-left: auto;
+.container {
+  display: flex;
+  background-image: url(../../../assets/images/wallpaperPrincipal.jpg);
+}
+
+.logo-container {
+  width: 50%;
+  height: 100vh;
+
+  @include mobile {
+    width: 0;
+  }
+
+  &__logo {
+    max-width: 300px;
+    margin-top: 8em;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mobile {
+      width: 100vh;
+    }
+  }
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
+  height: 100vh;
+  width: 50%;
+
+  @include mobile {
+    width: 100vh;
+  }
+}
+
+.form {
+  margin-top: 40vh;
+  margin-right: auto;
+
+  @include mobile {
+    margin-top: 25vh;
+  }
 }
