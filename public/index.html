@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" crossorigin="anonymous">
     <title>Acceso al sistema</title>
   </head>
   <body>
-    <header>
+    <header class="header" id="header">
     </header>
     <main class="main">
       <div class="container">
@@ -16,14 +17,14 @@
           <div class="logo-container__logo"><img class="img-logo" src="./assets/images/DS.png" alt="logo"></div>
         </div>
         <div class="form-container">
-          <form class="form">
+          <form class="form" id="formulario" action="administrador.html">
             <div class="form__field">
-              <input class="form__input" type="text" name="text" id="login-user">
+              <input class="form__input" type="text" name="username" id="login-user">
             </div>
             <div class="form__field">
               <input class="form__input" id="login-password" type="password" name="password">
             </div>
-            <div class="form__field">
+            <div class="form__field" id="btnacceder">
               <input class="form__submit" type="submit" value="Acceder" id="acceder">
             </div>
           </form>

@@ -5,10 +5,10 @@ block main
             .logo-container__logo
                 img(src="./assets/images/DS.png", alt="logo" class="img-logo")
         .form-container
-            form.form
+            form.form#formulario(action="administrador.html")
                 .form__field
-                    input(type="text", name="text")#login-user.form__input
+                    input(type="text", name="username")#login-user.form__input
                 .form__field
                     input#login-password(type="password", name="password").form__input
-                .form__field
+                .form__field#btnacceder
                     input(type="submit", value="Acceder")#acceder.form__submit
