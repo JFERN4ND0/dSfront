@@ -3,6 +3,7 @@
 
 // Mixins
 @import "mixins/brakpoins";
+@import "mixins/reset-list";
 
 // Estilos de base
 @import "base/normalize";
@@ -10,10 +11,14 @@
 
 // Bloques
 @import "blocks/header";
+@import "blocks/sidebar";
 @import "blocks/main-menu";
 @import "blocks/topbar";
 @import "blocks/toggle-menu";
+@import "blocks/logo";
 @import "blocks/forms";
 
 // Pages
 @import "pages/index";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
