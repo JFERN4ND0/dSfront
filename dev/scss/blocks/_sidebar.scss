@@ -1,9 +1,6 @@
 .sidebar {
   position: fixed;
   background-color: $primary-color;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   width: 100%;
   height: 100vh;
   top: 50px;
@@ -13,9 +10,9 @@
 
   @include laptop {
     display: block;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    width: 10%;
+    // grid-column: 1 / 2;
+    // grid-row: 1 / -1;
+    width: 0;
     top: 0;
     transform: translateY(0);
   }

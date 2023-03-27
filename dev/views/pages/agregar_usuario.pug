@@ -1,5 +1,24 @@
 extends ../pages/administrador
+block title
+    title= "Registro de usuario"
 block main
+    h1.title Registrar Usuaro
     .form-container
         form.form-addUsuario
-            
+            .form__field
+                input(type="text", name="username")#login-user.form__input
+            .form__field
+                input#login-password(type="password", name="password").form__input
+            .form__field
+                input(type="text", name="username")#login-user.form__input
+            .form__field
+                input(type="text", name="username")#login-user.form__input
+            .form__field
+                input#login-password(type="password", name="password").form__input
+            .form__field
+                select#form-select__roll(name="roll")
+                    option(value="Administrador")
+                    option(value="Capturista") 
+                    ption(value="Tecnico") 
+            .form__field#btnacceder
+                input(type="submit", value="")#acceder.formregistrar

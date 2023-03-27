@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Administrador</title>
+    <title>Registro de usuario</title>
   </head>
   <body>
     <header class="header" id="header"><a class="logo" href="/administrador.html"><img src="./assets/images/DS.png" alt="web Logo"></a>
@@ -20,16 +20,51 @@
       </div>
       <div class="sidebar" id="sidebar">
         <ul class="main-menu" id="main-menu">
-          <li class="opcion main-menu__item"><a class="main-menu__link" href="/registrarUsuario.html">Registrar usuario</a><i class="fa-solid fa-user-plus fa-lg"></i></li>
-          <li class="opcion main-menu__item"><a class="main-menu__link" href="/gestionarUsuarios.html">Gestionar usuarios</a><i class="fa-solid fa-address-card fa-lg"></i></li>
-          <li class="opcion main-menu__item"><a class="main-menu__link" href="/vistaCapturista.html">Panel vista-capturista</a><i class="fa-solid fa-tty fa-lg"></i></li>
-          <li class="opcion main-menu__item"><a class="main-menu__link" href="/vistaTecnico.html">Panel vista-tecnico</a><i class="fa-solid fa-laptop fa-lg"></i></li>
+          <li class="opcion main-menu__item"><a class="main-menu__link" href="/agregar_usuario.html">Registrar usuario</a>
+            <div class="container-icon"><i class="fa-solid fa-user-plus fa"></i></div>
+          </li>
+          <li class="opcion main-menu__item"><a class="main-menu__link" href="/gestionarUsuarios.html">Gestionar usuarios</a>
+            <div class="container-icon"><i class="fa-solid fa-address-card fa"></i></div>
+          </li>
+          <li class="opcion main-menu__item"><a class="main-menu__link" href="/vistaCapturista.html">Panel vista-capturista</a>
+            <div class="container-icon"><i class="fa-solid fa-tty fa"></i></div>
+          </li>
+          <li class="opcion main-menu__item"><a class="main-menu__link" href="/vistaTecnico.html">Panel vista-tecnico</a>
+            <div class="container-icon"><i class="fa-solid fa-laptop fa"></i></div>
+          </li>
         </ul>
       </div>
     </header>
     <main class="main">
+      <h1 class="title">Registrar Usuaro</h1>
       <div class="form-container">
-        <form class="form-addUsuario"></form>
+        <form class="form-addUsuario">
+          <div class="form__field">
+            <input class="form__input" type="text" name="username" id="login-user">
+          </div>
+          <div class="form__field">
+            <input class="form__input" id="login-password" type="password" name="password">
+          </div>
+          <div class="form__field">
+            <input class="form__input" type="text" name="username" id="login-user">
+          </div>
+          <div class="form__field">
+            <input class="form__input" type="text" name="username" id="login-user">
+          </div>
+          <div class="form__field">
+            <input class="form__input" id="login-password" type="password" name="password">
+          </div>
+          <div class="form__field">
+            <select id="form-select__roll" name="roll">
+              <option value="Administrador"></option>
+              <option value="Capturista"> </option>
+              <ption value="Tecnico"> </ption>
+            </select>
+          </div>
+          <div class="form__field" id="btnacceder">
+            <input class="formregistrar" type="submit" value="" id="acceder">
+          </div>
+        </form>
       </div>
     </main>
     <script src="js/scripts-min.js"></script>
