@@ -25,26 +25,27 @@
   &__link {
     text-decoration: none;
     color: $text-color;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   @include laptop {
-    width: 16em;
+    width: 4.5em;
     overflow: hidden;
     border: none;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: end;
+    align-items: start;
     font-size: 1.5rem;
-    transform: translateX(-75%);
-    transition: transform 0.5s;
+    // transform: translateX(-75%);
+    transition: transform 5s;
   }
 }
 
 .main-menu:hover {
-  transform: translateX(0);
+  // transform: translateX(0);
+  width: 16em;
 }
 
 .container-icon {
@@ -55,5 +56,7 @@
   @include laptop {
     width: auto;
     height: auto;
+    margin-left: 2em;
+    margin-right: 1.5em;
   }
 }
