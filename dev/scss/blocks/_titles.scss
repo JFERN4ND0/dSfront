@@ -10,16 +10,3 @@
     border-top: 1px solid $text-color;
   }
 }
-
-.subtitle {
-  // padding: 0 0 0.5rem;
-  // border-bottom: 1px solid $text-color;
-  // text-align: center;
-
-  @include laptop {
-    // padding: 0.5rem 0;
-    // padding-bottom: 0.5rem;
-    // padding-top: 0.5rem;
-    // border-top: 1px solid $text-color;
-  }
-}

@@ -10,8 +10,6 @@
 
   @include laptop {
     display: block;
-    // grid-column: 1 / 2;
-    // grid-row: 1 / -1;
     width: 0;
     top: 0;
     transform: translateY(0);

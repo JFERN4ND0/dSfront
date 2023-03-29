@@ -1,0 +1,65 @@
+.form-addUsuario {
+  //   background-color: $dark-color;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  // max-width: 360px;
+
+  &__field {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__label,
+  &__input {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: $text-color;
+  }
+
+  &__input {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $text-color;
+  }
+
+  &__roll {
+    // width: 10em;
+    text-align: center;
+  }
+
+  &__submit {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: $text-color;
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: transform(0.2s);
+
+    &:active,
+    &:focus {
+      transform: scale(0.9);
+    }
+  }
+
+  @include laptop {
+    margin-left: 9em;
+    width: 80%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.form-datosp,
+.formdatosU {
+  width: 45%;
+}

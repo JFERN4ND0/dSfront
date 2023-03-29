@@ -3,22 +3,28 @@ block title
     title= "Registro de usuario"
 block main
     h1.title Registrar Usuaro
-    .form-container
-        form.form-addUsuario
-            .form__field
-                input(type="text", name="username")#login-user.form__input
-            .form__field
-                input#login-password(type="password", name="password").form__input
-            .form__field
-                input(type="text", name="username")#login-user.form__input
-            .form__field
-                input(type="text", name="username")#login-user.form__input
-            .form__field
-                input#login-password(type="password", name="password").form__input
-            .form__field
-                select#form-select__roll(name="roll")
-                    option(value="Administrador")
-                    option(value="Capturista") 
-                    ption(value="Tecnico") 
-            .form__field#btnacceder
-                input(type="submit", value="")#acceder.formregistrar
+    form.form-addUsuario
+        .form-datosp
+            .form-addUsuario__field
+                label(for="register-name").form-addUsuario__label Name
+                input(type="text", name="username").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-email").form-addUsuario__label Email
+                input#login-email(type="email", name="email").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-telephone").form-addUsuario__label Telephone
+                input(type="text", name="telephone").form-addUsuario__input
+        .formdatosU
+            .form-addUsuario__field
+                label(for="register-username").form-addUsuario__label UserName
+                input(type="text", name="username").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-pasword").form-addUsuario__label Pasword
+                input#login-password(type="password", name="password").form-addUsuario__input
+            .form-addUsuario__field
+                select#form-addUsuario__roll.form-addUsuario__roll(name="roll")
+                    option(value="administrador") Administrador
+                    option(value="capturista") Capturista
+                    option(value="tecnico") Tecnico
+            .form-addUsuario__field#btnregistrar
+                input(type="submit", value="REGISTRAR")#registrar.form-addUsuario__submit
