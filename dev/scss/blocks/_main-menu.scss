@@ -47,7 +47,9 @@
 }
 
 .main-menu:hover {
-  width: 16em;
+  @include laptop {
+    width: 16em;
+  }
 }
 
 .container-icon {
