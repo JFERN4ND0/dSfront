@@ -1,16 +1,16 @@
 .form-addUsuario {
-  //   background-color: $dark-color;
   padding: 1rem;
   border-radius: 15px;
-  width: 100%;
-  // max-width: 360px;
+  width: 90%;
+  margin-left: 5%;
+  // background-color: $primary-color;
+  background-color: rgba(45, 55, 150, 0.327);
 
   &__field {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    margin: 15px;
   }
 
   &__label,
@@ -26,10 +26,10 @@
   &__input {
     margin-bottom: 2rem;
     border-bottom: 1px solid $text-color;
+    background-color: burlywood;
   }
 
   &__roll {
-    // width: 10em;
     text-align: center;
   }
 
@@ -38,7 +38,7 @@
     display: inline-block;
     padding: 0.5rem 1rem;
     color: $text-color;
-    background-color: $primary-color;
+    background-color: $button-color;
     border: none;
     cursor: pointer;
     border-radius: 0.25rem;
@@ -50,10 +50,26 @@
     }
   }
 
+  &__select {
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+      justify-content: flex-start;
+      margin-left: 1em;
+      margin-bottom: 2em;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
   @include laptop {
     margin-left: 9em;
     width: 80%;
-    background-color: black;
+    // height: 500px;
     display: flex;
     justify-content: space-around;
   }
@@ -61,5 +77,8 @@
 
 .form-datosp,
 .formdatosU {
-  width: 45%;
+  @include laptop {
+    width: 45%;
+    height: 100%;
+  }
 }
