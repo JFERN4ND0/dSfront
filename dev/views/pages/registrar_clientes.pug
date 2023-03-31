@@ -1,0 +1,22 @@
+extends ../pages/capturista
+block title
+    title= "Registro de cliente"
+block main
+    h1.title Registrar Cliente
+    form.form-addUsuario.add-cliente
+        .form-datosp
+            .form-addUsuario__field
+                label(for="register-name").form-addUsuario__label Nombre
+                input(type="text", name="username").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-email").form-addUsuario__label Email
+                input#login-email(type="email", name="email").form-addUsuario__input
+        .formdatosU
+            .form-addUsuario__field
+                label(for="register-telephone").form-addUsuario__label Teléfono
+                input(type="text", name="telephone").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-username").form-addUsuario__label Dirección
+                input(type="text", name="username").form-addUsuario__input
+        .form-addUsuario__btn.add-cliente__btn#btnregistrar
+            input(type="submit", value="REGISTRAR")#registrar.form-addUsuario__submit

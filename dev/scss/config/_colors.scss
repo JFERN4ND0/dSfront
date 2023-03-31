@@ -4,10 +4,10 @@
   --danger-color: #ff3c32;
   --input-color: #9999ff;
   --button-color: #4161b9;
-  --background-color: #7673f7;
+  --background-color: #5f9ea0;
   --text-color: #eee;
-  --dark-color: #204549;
-  --dark-color-2: #251225;
+  --background-color-form: rgba(45, 55, 150, 0.327);
+  --dark-color-2: #204549;
 }
 
 $primary-color: var(--primary-color);
@@ -16,6 +16,6 @@ $danger-color: var(--danger-color);
 $input-color: var(--input-color);
 $background-color: var(--background-color);
 $button-color: var(--button-color);
-$dark-color: var(--dark-color);
+$background-color-form: var(--background-color-form);
 $dark-color-2: var(--dark-color-2);
 $text-color: var(--text-color);

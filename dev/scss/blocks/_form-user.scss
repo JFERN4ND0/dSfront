@@ -69,7 +69,6 @@
   @include laptop {
     margin-left: 9em;
     width: 80%;
-    // height: 500px;
     display: flex;
     justify-content: space-around;
   }
@@ -80,5 +79,17 @@
   @include laptop {
     width: 45%;
     height: 100%;
+  }
+}
+
+.add-cliente {
+  @include laptop {
+    align-items: flex-end;
+  }
+
+  &__btn {
+    @include laptop {
+      position: absolute;
+    }
   }
 }

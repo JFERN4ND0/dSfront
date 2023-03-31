@@ -2,10 +2,22 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @include laptop {
+    margin-left: 5em;
+  }
 }
 
 .table-user {
   width: 80%;
   border: 2px solid;
   background-color: darkslateblue;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
 }

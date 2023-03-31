@@ -33,9 +33,9 @@
   }
 }
 
-.form-container {
+.form-acces-container {
   display: flex;
-  text-align: center;
+  justify-content: center;
   height: 90vh;
   width: 100vw;
   z-index: 100;
@@ -46,6 +46,6 @@
   }
 }
 
-.form {
+.form-acces {
   margin-top: 30vh;
 }
