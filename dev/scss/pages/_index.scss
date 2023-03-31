@@ -1,38 +1,51 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include laptop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .logo-container {
-  width: 50%;
-  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
 
-  @include mobile {
-    width: 0;
+  @include laptop {
+    position: relative;
+    height: 90vh;
+    width: 50%;
   }
 
   &__logo {
-    max-width: 300px;
-    margin-top: 10vh;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: -5em;
 
-    @include mobile {
-      width: 100vw;
+    @include laptop {
+      margin-top: 6em;
+      max-width: 300px;
     }
   }
 }
 
 .form-container {
-  height: 100vh;
-  width: 50%;
+  display: flex;
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+  z-index: 100;
 
-  @include mobile {
-    margin-top: 0;
-    width: 100vh;
+  @include laptop {
+    position: relative;
+    width: 50%;
   }
 }
 
 .form {
   margin-top: 30vh;
-  margin-right: auto;
 }
