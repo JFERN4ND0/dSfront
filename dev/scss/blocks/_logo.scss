@@ -9,6 +9,7 @@
 
   @include laptop {
     position: absolute;
-    width: 7%;
+    width: 6%;
+    min-width: 85px;
   }
 }

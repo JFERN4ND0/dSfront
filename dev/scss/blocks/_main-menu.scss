@@ -13,10 +13,10 @@
     @include laptop {
       border: none;
       line-height: 2.5;
-      margin-right: 1.7em;
-      width: 16em;
+      margin-right: 1em;
+      width: 14em;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       font-size: 1.3rem;
     }
@@ -29,7 +29,7 @@
   }
 
   @include laptop {
-    width: 4.5em;
+    width: 3.85em;
     overflow: hidden;
     border: none;
     height: 100vh;
@@ -48,19 +48,21 @@
 
 .main-menu:hover {
   @include laptop {
-    width: 16em;
+    width: 13em;
   }
 }
 
-.container-icon {
-  width: 0;
-  height: 0;
-  overflow: hidden;
+.container {
+  &-icon {
+    width: 0;
+    height: 0;
+    overflow: hidden;
 
-  @include laptop {
-    width: auto;
-    height: auto;
-    margin-left: 2em;
-    margin-right: 1.5em;
+    @include laptop {
+      width: auto;
+      height: auto;
+      margin-left: 2em;
+      margin-right: 1.5em;
+    }
   }
 }

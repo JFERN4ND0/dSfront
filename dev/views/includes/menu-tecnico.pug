@@ -1,0 +1,19 @@
+extends main-menu
+block menu
+    ul#main-menu.main-menu
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-laptop-file
+            a(href=`/gestion_equipos.html`).main-menu__link= "Gestión de equipos"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-chart-bar
+            a(href=`/grafica_estatus.html`).main-menu__link= "Grafica de estatus"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-chart-pie
+            a(href=`/grafica_marcas.html`).main-menu__link= "Grafica de marcas"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-right-from-bracket
+            a(href=`/index.html`).main-menu__link= "Cerar sesión"
