@@ -3,19 +3,20 @@ block title
     title= "Equipos registrados"
 block main
     h1.title Equipos registrados
-    select#filtro-tipo(name="filtro-tipo")
-        option(value="laptop") Laptop
-        option(value="desktop") Desktop
-        option(value="impresora") Impresora
-    select#filtro-marca(name="filtro-marca")
-        option(value="laptop") Laptop
-    select#filtro-estatus(name="filtro-estatus")
-        option(value="todos") Todos
-        option(value="nuevo_ingreso") Nuevo ingreso
-        option(value="no_reparado") No reparado
-        option(value="en_revision") En revisión
-        option(value="reparado") Reparado
-        option(value="entregado") Entregado
+    .filtros
+        select#filtro-tipo(name="filtro-tipo")
+            option(value="laptop") Laptop
+            option(value="desktop") Desktop
+            option(value="impresora") Impresora
+        select#filtro-marca(name="filtro-marca")
+            option(value="laptop") Laptop
+        select#filtro-estatus(name="filtro-estatus")
+            option(value="todos") Todos
+            option(value="nuevo_ingreso") Nuevo ingreso
+            option(value="no_reparado") No reparado
+            option(value="en_revision") En revisión
+            option(value="reparado") Reparado
+            option(value="entregado") Entregado
     .container-table
         table.table-user#table-client
             colgrup

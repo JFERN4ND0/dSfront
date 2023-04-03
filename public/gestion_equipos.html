@@ -37,22 +37,24 @@
     </header>
     <main class="main">
       <h1 class="title">Equipos registrados</h1>
-      <select id="filtro-tipo" name="filtro-tipo">
-        <option value="laptop">Laptop</option>
-        <option value="desktop">Desktop</option>
-        <option value="impresora">Impresora</option>
-      </select>
-      <select id="filtro-marca" name="filtro-marca">
-        <option value="laptop">Laptop</option>
-      </select>
-      <select id="filtro-estatus" name="filtro-estatus">
-        <option value="todos">Todos</option>
-        <option value="nuevo_ingreso">Nuevo ingreso</option>
-        <option value="no_reparado">No reparado</option>
-        <option value="en_revision">En revisión</option>
-        <option value="reparado">Reparado</option>
-        <option value="entregado">Entregado</option>
-      </select>
+      <div class="filtros">
+        <select id="filtro-tipo" name="filtro-tipo">
+          <option value="laptop">Laptop</option>
+          <option value="desktop">Desktop</option>
+          <option value="impresora">Impresora</option>
+        </select>
+        <select id="filtro-marca" name="filtro-marca">
+          <option value="laptop">Laptop</option>
+        </select>
+        <select id="filtro-estatus" name="filtro-estatus">
+          <option value="todos">Todos</option>
+          <option value="nuevo_ingreso">Nuevo ingreso</option>
+          <option value="no_reparado">No reparado</option>
+          <option value="en_revision">En revisión</option>
+          <option value="reparado">Reparado</option>
+          <option value="entregado">Entregado</option>
+        </select>
+      </div>
       <div class="container-table">
         <table class="table-user" id="table-client">
           <colgrup>
@@ -82,7 +84,14 @@
     </main>
     <script src="js/scripts-min.js"></script>
     <footer>
-      <div class="conteiner-contact"></div>
+      <div class="conteiner-contact">
+        <div class="conteiner-mio">
+          <h6 class="mio">Mi contacto</h6><a href="https://github.com/JFERN4ND0"><i class="fa-brands fa-github"></i></a><a href="https://github.com/JFERN4ND0"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="conteiner-geek">
+          <h6 class="geek">Basado en proyecto final del curso</h6><a href="https://youtu.be/dgF4z8FbtG0"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
