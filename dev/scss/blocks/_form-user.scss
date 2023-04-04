@@ -3,8 +3,7 @@
   border-radius: 15px;
   width: 90%;
   margin-left: 5%;
-  // background-color: $primary-color;
-  background-color: rgba(45, 55, 150, 0.327);
+  background-color: $background-color-form;
 
   &__field {
     display: flex;
@@ -26,28 +25,11 @@
   &__input {
     margin-bottom: 2rem;
     border-bottom: 1px solid $text-color;
-    background-color: burlywood;
+    background-color: $input-color;
   }
 
   &__roll {
     text-align: center;
-  }
-
-  &__submit {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: $text-color;
-    background-color: $button-color;
-    border: none;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    transition: transform(0.2s);
-
-    &:active,
-    &:focus {
-      transform: scale(0.9);
-    }
   }
 
   &__select {
@@ -90,6 +72,24 @@
   &__btn {
     @include laptop {
       position: absolute;
+    }
+  }
+}
+
+.form {
+  &__submit {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: $text-color;
+    background-color: $button-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: transform(0.2s);
+
+    &:active,
+    &:focus {
+      transform: scale(0.9);
     }
   }
 }

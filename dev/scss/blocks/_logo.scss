@@ -8,8 +8,10 @@
   z-index: 200;
 
   @include laptop {
+    top: 1em;
     position: absolute;
     width: 6%;
     min-width: 85px;
+    margin-left: 1em;
   }
 }

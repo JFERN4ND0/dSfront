@@ -16,7 +16,6 @@
       margin-right: 1em;
       width: 14em;
       display: flex;
-      // justify-content: space-between;
       align-items: center;
       font-size: 1.3rem;
     }
@@ -49,6 +48,7 @@
 .main-menu:hover {
   @include laptop {
     width: 13em;
+    background-color: $secondary-color;
   }
 }
 

@@ -9,14 +9,15 @@ block main
             option(value="desktop") Desktop
             option(value="impresora") Impresora
         select#filtro-marca(name="filtro-marca")
-            option(value="laptop") Laptop
+            option(value="todasM") Todas
         select#filtro-estatus(name="filtro-estatus")
-            option(value="todos") Todos
+            option(value="todosE") Todos
             option(value="nuevo_ingreso") Nuevo ingreso
             option(value="no_reparado") No reparado
             option(value="en_revision") En revisión
             option(value="reparado") Reparado
             option(value="entregado") Entregado
+        button(type="submit").form__submit Aplicar
     .container-table
         table.table-user#table-client
             colgrup

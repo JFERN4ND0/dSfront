@@ -1,22 +1,14 @@
 :root {
-  // --primary-color: #4161b983;
-  --primary-color: #ff457e;
-  --secondary-color: #e7e0e0;
+  --primary-color: #4161b983;
+  --secondary-color: rgb(73, 7, 135);
   --danger-color: #ff3c32;
-  // --input-color: #9999ff;
-  // --input-color: #5252df;
-  --input-color: #512f;
-  // --button-color: #4161b9;
-  --button-color: #41cc29;
-  // --background-color: #5f9ea0;
-  --background-color: #0f9ee0;
-  // --text-color: #eee;
-  --text-color: #ef00ef;
-  // --background-color-form: rgba(45, 55, 150, 0.327);
-  --background-color-form: rgba(226, 218, 233, 0.473);
-  // --dark-color-2: #204549;
-  --dark-color-2: #254e49;
-  --footer-color: rgb(0, 0, 0);
+  --input-color: #7be4dd85;
+  --button-color: #4161b9;
+  --background-color: #5f9ea0;
+  --text-color: #eee;
+  --background-color-form: rgba(45, 55, 150, 0.327);
+  --dark-color-2: #00a86b;
+  --footer-color: rgba(0, 0, 0, 0.295);
 }
 
 $primary-color: var(--primary-color);
