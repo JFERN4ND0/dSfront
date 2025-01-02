@@ -1,6 +1,6 @@
 import gulp from "gulp";
 //Constantes para el automatizador de tareas
-const gulp = require("gulp");
+//const gulp = require("gulp");
 const pug = require("gulp-pug");
 const sass = require("gulp-sass")(require("sass"));
 const babel = require("gulp-babel");
