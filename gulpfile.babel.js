@@ -48,6 +48,7 @@ gulp.task("styles", async () => {
     .pipe(autoprefixer({ cascade: false }))
     .pipe(gulp.dest("./public/css"));
 });
+gulp.task("default", gulp.series("styles"));
 
 //tarea para el js de la UX
 gulp.task("babel", () => {
