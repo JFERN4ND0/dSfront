@@ -1,0 +1,19 @@
+extends main-menu
+block menu
+    ul#main-menu.main-menu
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-user-plus.fa
+            a(href=`/registrar_clientes.html`).main-menu__link= "Registrar Cliente"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-address-card.fa
+            a(href=`/gestionar_clientes.html`).main-menu__link= "Gestionar Clientes"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-download
+            a(href=`#`).main-menu__link= "Descargar clientes"
+        li.opcion.main-menu__item
+            .container-icon
+                i.fa-solid.fa-right-from-bracket
+            a(href=`/index.html`).main-menu__link= "Cerar sesión"

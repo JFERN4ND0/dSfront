@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Registro de usuario</title>
+    <title>Usuarios registrados</title>
   </head>
   <body>
     <header class="header" id="header"><a class="logo" href="/administrador.html"><img src="./assets/images/icon.png" alt="web Logo"></a>
@@ -39,43 +39,36 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="title">Registrar Usuario</h1>
-      <form class="form-addUsuario">
-        <div class="form-datosp">
-          <div class="form-addUsuario__field">
-            <label class="form-addUsuario__label" for="register-name">Nombre</label>
-            <input class="form-addUsuario__input" type="text" name="username">
-          </div>
-          <div class="form-addUsuario__field">
-            <label class="form-addUsuario__label" for="register-email">Email</label>
-            <input class="form-addUsuario__input" id="login-email" type="email" name="email">
-          </div>
-          <div class="form-addUsuario__field">
-            <label class="form-addUsuario__label" for="register-telephone">Teléfono</label>
-            <input class="form-addUsuario__input" type="text" name="telephone">
-          </div>
-        </div>
-        <div class="formdatosU">
-          <div class="form-addUsuario__field">
-            <label class="form-addUsuario__label" for="register-username">Nombre de usuario</label>
-            <input class="form-addUsuario__input" type="text" name="username">
-          </div>
-          <div class="form-addUsuario__field">
-            <label class="form-addUsuario__label" for="register-pasword">contraseña</label>
-            <input class="form-addUsuario__input" id="login-password" type="password" name="password">
-          </div>
-          <div class="form-addUsuario__select">
-            <select class="form-addUsuario__roll" id="form-addUsuario__roll" name="roll">
-              <option value="administrador">Administrador</option>
-              <option value="capturista">Capturista</option>
-              <option value="tecnico">Tecnico</option>
-            </select>
-          </div>
-          <div class="form-addUsuario__btn" id="btnregistrar">
-            <input class="form__submit" type="submit" value="REGISTRAR" id="registrar">
-          </div>
-        </div>
-      </form>
+      <h1 class="title">Usuarios registrados</h1>
+      <div class="container-table">
+        <table class="table" id="table-user">
+          <colgrup>
+            <col class="ids">
+            <col class="names">
+            <col class="usernames">
+            <col class="permisos">
+            <col class="status">
+          </colgrup>
+          <thead class="table__head" id="table__head">
+            <tr>
+              <th></th>
+              <th>Nombre</th>
+              <th>Usuario</th>
+              <th>Permisos</th>
+              <th>Estatus</th>
+            </tr>
+          </thead>
+          <tbody class="table__body" id="table__body">
+            <tr>
+              <td>1</td>
+              <td>AndreiAlmir</td>
+              <td>ANDREIA</td>
+              <td>Administrador</td>
+              <td>Activo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
     <script src="js/scripts-min.js"></script>
     <footer class="footer">

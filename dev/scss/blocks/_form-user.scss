@@ -1,0 +1,95 @@
+.form-addUsuario {
+  padding: 1rem;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: $background-color-form;
+
+  &__field {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  &__label,
+  &__input {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    color: $text-color;
+  }
+
+  &__input {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $text-color;
+    background-color: $input-color;
+  }
+
+  &__roll {
+    text-align: center;
+  }
+
+  &__select {
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+      justify-content: flex-start;
+      margin-left: 1em;
+      margin-bottom: 2em;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include laptop {
+    margin-left: 9em;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.form-datosp,
+.formdatosU {
+  @include laptop {
+    width: 45%;
+    height: 100%;
+  }
+}
+
+.add-cliente {
+  @include laptop {
+    align-items: flex-end;
+  }
+
+  &__btn {
+    @include laptop {
+      position: absolute;
+    }
+  }
+}
+
+.form {
+  &__submit {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: $text-color;
+    background-color: $button-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: transform(0.2s);
+
+    &:active,
+    &:focus {
+      transform: scale(0.9);
+    }
+  }
+}

@@ -1,5 +1,30 @@
 extends ../pages/administrador
+block title
+    title= "Registro de usuario"
 block main
-    .form-container
-        form.form-addUsuario
-            
+    h1.title Registrar Usuario
+    form.form-addUsuario
+        .form-datosp
+            .form-addUsuario__field
+                label(for="register-name").form-addUsuario__label Nombre
+                input(type="text", name="username").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-email").form-addUsuario__label Email
+                input#login-email(type="email", name="email").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-telephone").form-addUsuario__label Teléfono
+                input(type="text", name="telephone").form-addUsuario__input
+        .formdatosU
+            .form-addUsuario__field
+                label(for="register-username").form-addUsuario__label Nombre de usuario
+                input(type="text", name="username").form-addUsuario__input
+            .form-addUsuario__field
+                label(for="register-pasword").form-addUsuario__label contraseña
+                input#login-password(type="password", name="password").form-addUsuario__input
+            .form-addUsuario__select
+                select#form-addUsuario__roll.form-addUsuario__roll(name="roll")
+                    option(value="administrador") Administrador
+                    option(value="capturista") Capturista
+                    option(value="tecnico") Tecnico
+            .form-addUsuario__btn#btnregistrar
+                input(type="submit", value="REGISTRAR")#registrar.form__submit

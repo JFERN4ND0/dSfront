@@ -1,11 +1,51 @@
-.img-logo {
-  max-width: 310px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.form-container {
+.container {
   display: flex;
   justify-content: center;
-  margin-top: 1em;
+  align-items: center;
+
+  @include laptop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.logo-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+
+  @include laptop {
+    position: relative;
+    height: 90vh;
+    width: 50%;
+  }
+
+  &__logo {
+    margin-top: -5em;
+
+    @include laptop {
+      margin-top: 6em;
+      max-width: 300px;
+    }
+  }
+}
+
+.form-acces-container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  z-index: 100;
+
+  @include laptop {
+    position: relative;
+    width: 50%;
+  }
+}
+
+.form-acces {
+  margin-top: 30vh;
 }

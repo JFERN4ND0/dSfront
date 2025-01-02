@@ -1,11 +1,14 @@
 :root {
-  --primary-color: #4161b9;
-  --secondary-color: #e7e0e0;
+  --primary-color: #4161b983;
+  --secondary-color: rgb(73, 7, 135);
   --danger-color: #ff3c32;
-  --input-color: #9999ff;
+  --input-color: #7be4dd85;
   --button-color: #4161b9;
-  --background-color: #222;
+  --background-color: #5f9ea0;
   --text-color: #eee;
+  --background-color-form: rgba(45, 55, 150, 0.327);
+  --dark-color-2: #00a86b;
+  --footer-color: rgba(0, 0, 0, 0.295);
 }
 
 $primary-color: var(--primary-color);
@@ -14,5 +17,7 @@ $danger-color: var(--danger-color);
 $input-color: var(--input-color);
 $background-color: var(--background-color);
 $button-color: var(--button-color);
+$background-color-form: var(--background-color-form);
 $dark-color-2: var(--dark-color-2);
 $text-color: var(--text-color);
+$footer-color: var(--footer-color);

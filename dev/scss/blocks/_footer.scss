@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  background-color: $footer-color;
+  color: $text-color;
+  font-size: 1.2em;
+
+  @include laptop {
+    font-size: 1.5em;
+  }
+
+  &-mio__link {
+    margin-right: 1em;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  &-geek__link {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.container__link {
+  margin-top: -1em;
+  margin-bottom: 1em;
+}

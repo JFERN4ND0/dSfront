@@ -1,8 +1,29 @@
+// Configuración de guías de estilo
 @import "config/colors";
 
+// Mixins
+@import "mixins/brakpoins";
+@import "mixins/reset-list";
+
+// Estilos de base
 @import "base/normalize";
 @import "base/base";
 
-@import "blocks/forms";
+// Bloques
+@import "blocks/header";
+@import "blocks/sidebar";
+@import "blocks/main-menu";
+@import "blocks/topbar";
+@import "blocks/toggle-menu";
+@import "blocks/titles";
+@import "blocks/logo";
+@import "blocks/filtros";
+@import "blocks/formAcceso";
+@import "blocks/form-user";
+@import "blocks/tables";
+@import "blocks/footer";
 
+// Pages
 @import "pages/index";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
