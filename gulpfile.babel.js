@@ -1,10 +1,9 @@
-import gulp from "gulp";
 //Constantes para el automatizador de tareas
-// const gulp = require("gulp");
+const gulp = require("gulp");
 const pug = require("gulp-pug");
 const sass = require("gulp-sass")(require("sass"));
 const babel = require("gulp-babel");
-// const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require("gulp-autoprefixer");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
@@ -27,26 +26,18 @@ gulp.task("pug", () => {
 });
 
 //tarea para los estilos de la UX
-// gulp.task("styles", () => {
-//   return gulp
-//     .src("./dev/scss/styles.scss")
-//     .pipe(plumber())
-//     .pipe(
-//       sass({
-//         outputStyle: "compressed",
-//       })
-//     )
-//     .pipe(autoprefixer())
-//     .pipe(gulp.dest("./public/css"))
-//     .pipe(server.stream());
-// });
-gulp.task("styles", async () => {
-  const autoprefixer = (await import("gulp-autoprefixer")).default;
-
+gulp.task("styles", () => {
   return gulp
-    .src("src/css/*.css")
-    .pipe(autoprefixer({ cascade: false }))
-    .pipe(gulp.dest("dist/css"));
+    .src("./dev/scss/styles.scss")
+    .pipe(plumber())
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+      })
+    )
+    .pipe(autoprefixer())
+    .pipe(gulp.dest("./public/css"))
+    .pipe(server.stream());
 });
 
 //tarea para el js de la UX
