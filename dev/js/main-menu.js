@@ -12,3 +12,13 @@ if (toggleMenu) {
     }
   });
 }
+
+const validarDatos = (adatos) => {
+  for (const dato of adatos) {
+    if (dato == "") {
+      window.alert("Todos los campos deben estar llenos");
+      return false;
+    }
+  }
+  return true;
+};
