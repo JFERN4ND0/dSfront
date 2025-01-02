@@ -1,5 +1,6 @@
+import gulp from "gulp";
 //Constantes para el automatizador de tareas
-const gulp = require("gulp");
+//const gulp = require("gulp");
 const pug = require("gulp-pug");
 const sass = require("gulp-sass")(require("sass"));
 const babel = require("gulp-babel");
@@ -26,7 +27,7 @@ gulp.task("pug", () => {
 });
 
 //tarea para los estilos de la UX
-gulp.task("styles", () => {
+/*gulp.task("styles", () => {
   return gulp
     .src("./dev/scss/styles.scss")
     .pipe(plumber())
@@ -38,7 +39,16 @@ gulp.task("styles", () => {
     .pipe(autoprefixer())
     .pipe(gulp.dest("./public/css"))
     .pipe(server.stream());
+});*/
+gulp.task("styles", async () => {
+  const autoprefixer = (await import("gulp-autoprefixer")).default;
+
+  return gulp
+    .src("./dev/scss/styles.scss")
+    .pipe(autoprefixer({ cascade: false }))
+    .pipe(gulp.dest("./public/css"));
 });
+gulp.task("default", gulp.series("styles"));
 
 //tarea para el js de la UX
 gulp.task("babel", () => {
